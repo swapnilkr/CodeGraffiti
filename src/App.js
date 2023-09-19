@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/Preloader";
+import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -27,6 +28,7 @@ function App() {
   return (
     <Router>
       <Preloader startup={startup} />
+      <Footer />
     </Router>
 
   );
