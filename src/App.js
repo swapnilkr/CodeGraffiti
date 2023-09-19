@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/Preloader";
+import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -28,6 +29,7 @@ function App() {
   return (
     <Router>
       <Preloader startup={startup} />
+      <NavBar />
       <Footer />
     </Router>
 

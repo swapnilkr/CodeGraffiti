@@ -292,6 +292,9 @@ button:focus {
 .logo {
     height: 1.4em !important;
     width: 2.5em !important;
+    color: #c770f0;
+    font-weight: 700;
+    font-size: 1.4em;
 }
 
 .navbar-nav .nav-link {
@@ -320,6 +323,13 @@ button:focus {
     transition: all 0.3s ease-out 0s;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 950px) {
+    .navbar-nav .nav-item a svg {
+        position: inherit;
+        left: 33.33%;
+    }
 }
 
 .navbar-nav .nav-item a::after {
