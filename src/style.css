@@ -57,7 +57,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
-    animation: move 5s infinite;
+    animation: move 3s infinite;
 }
 
 #startup h1 {
@@ -66,27 +66,9 @@ button:focus {
 
 .greeting {
     position: relative;
-    top: 8.6vmin;
-    animation: white-out 5s infinite;
+    top: 10vmin;
+    animation: white-out 2s infinite;
 }
-
-/* .closure::after {
-    content: '';
-    position: absolute;
-    height: 25vmin;
-    width: 40vmin;
-    background: #282c34;
-    transform: translate(-45vmin, -24.5vmin);
-}
-
-.closure::before {
-    content: '';
-    position: absolute;
-    height: 25vmin;
-    width: 40vmin;
-    background: #282c34;
-    transform: translate(-40vmin, 5vmin);
-} */
 
 .en {
     color: #fa8231;
@@ -101,17 +83,87 @@ button:focus {
 }
 
 @keyframes move {
-    25% {
-        transform: translatey(-25%);
+
+    33.33% {
+        transform: translatey(-10vmin);
         opacity: 1;
     }
 
-    50% {
-        transform: translatey(-50%);
+    66.66% {
+        transform: translatey(-20vmin);
+    }
+}
+
+@media (max-width: 950px) {
+    #startup h1 {
+        font-size: 5vmin;
     }
 
-    75% {
-        transform: translatey(-75%);
+    .greeting {
+        position: relative;
+        top: 7vmin;
+        animation: white-out 6s infinite;
+    }
+
+    @keyframes move {
+
+        33.33% {
+            transform: translatey(-7vmin);
+            opacity: 1;
+        }
+
+        66.66% {
+            transform: translatey(-14vmin);
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #startup h1 {
+        font-size: 4vmin;
+    }
+
+    .greeting {
+        position: relative;
+        top: 7vmin;
+        animation: white-out 6s infinite;
+    }
+
+    @keyframes move {
+
+        33.33% {
+            transform: translatey(-7vmin);
+            opacity: 1;
+        }
+
+        66.66% {
+            transform: translatey(-12vmin);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 4vmin;
+    }
+
+    .greeting {
+        position: relative;
+        top: 8vmin;
+        animation: white-out 2s infinite;
+    }
+
+    @keyframes move {
+
+        33.33% {
+            transform: translatey(-vmin);
+            opacity: 1;
+        }
+
+        66.66% {
+            transform: translatey(-20vmin);
+        }
     }
 }
 
