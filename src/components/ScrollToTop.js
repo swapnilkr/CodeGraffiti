@@ -23,6 +23,7 @@ function ScrollToTop() {
         maxHeight: "100%",
     }
 
+    
     return (
         <TbSquareRoundedArrowUp style={styleObj} onClick={navigateToTop}/>
     );
