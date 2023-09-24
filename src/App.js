@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/Preloader";
 import NavBar from "./components/Navbar";
+import HomeTSA from "./components/Home/HomeTSA";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
