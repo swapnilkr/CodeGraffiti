@@ -31,6 +31,9 @@ function App() {
     <Router>
       <Preloader startup={startup} />
       <NavBar />
+      <Routes>
+          <Route path="/" element={<HomeTSA />} />
+      </Routes>
       <ScrollToTop />
       <Footer />
     </Router>

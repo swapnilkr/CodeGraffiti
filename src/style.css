@@ -173,6 +173,7 @@ button:focus {
 
 #startup-none {
     opacity: 0;
+    display: none;
 }
 
 #no-scroll {
