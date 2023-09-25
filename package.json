@@ -20,7 +20,7 @@
     "react-pdf": "^7.3.3",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
-    "react-tsparticles": "^2.12.2",
+    "react-tsparticles": "^1.42.2",
     "typewriter-effect": "^2.20.1",
     "web-vitals": "^2.1.4"
   },
