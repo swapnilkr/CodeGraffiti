@@ -21,6 +21,7 @@ function ScrollToTop() {
         top: "87%",
         right: "0%",
         maxHeight: "100%",
+        color: "white"
     }
 
     return (
