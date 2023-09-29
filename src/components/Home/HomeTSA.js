@@ -31,12 +31,7 @@ function HomeTSA() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+
             </Col>
           </Row>
         </Container>
