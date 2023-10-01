@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
-import homeMain2 from "../../Assets/Home-main2"
 import Particle from "../Particles";
 import HomeBottomComp from "./HomeBottomComp";
 import TechExp from "./TechExp";
@@ -32,7 +31,12 @@ function HomeTSA() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
             </Col>
           </Row>
         </Container>
