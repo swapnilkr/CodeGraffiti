@@ -33,6 +33,7 @@ function App() {
       <NavBar />
       <Routes>
           <Route path="/" element={<HomeTSA />} />
+          <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <ScrollToTop />
       <Footer />
