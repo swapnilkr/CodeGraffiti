@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
@@ -18,6 +19,8 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
     const [expand, setExpand] = useState(false);
     const [navColour, setNavColour] = useState(false);
+
+    const [dropdownExpand, setDropdownExpand] = useState(false);
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -61,16 +64,26 @@ function NavBar() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/about"
-                                onClick={() => setExpand(false)}
-                            >
-                                <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
-                                About
+                        <NavDropdown
+                            title={
+                                <div>
+                                    <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                                    About
+                                </div>
+                            }
+                            show={dropdownExpand}
+                            onClick={() => setDropdownExpand(!dropdownExpand)}
+                            onBlur={() => setDropdownExpand(!dropdownExpand)}
+                            onMouseEnter={() => setDropdownExpand(true)}
+                            onMouseLeave={() => setDropdownExpand(false)}
+                        >
+                            <Nav.Link as={Link} to="/whoiam" onClick={() => setExpand(false)}>
+                                Who i am
                             </Nav.Link>
-                        </Nav.Item>
+                            <Nav.Link as={Link} to="/experience" onClick={() => setExpand(false)}>
+                                Experience
+                            </Nav.Link>
+                        </NavDropdown>
 
                         <Nav.Item>
                             <Nav.Link
