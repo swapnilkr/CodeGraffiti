@@ -38,7 +38,7 @@ function NavBar() {
         >
             <Container>
                 <Navbar.Brand href="/" className="d-flex">
-                    <div className="img-fluid logo" alt="brand">
+                    <div className="img img-fluid logo" alt="brand">
                         Sn.
                     </div>
                 </Navbar.Brand>
@@ -107,7 +107,7 @@ function NavBar() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item className="fork-btn">
+                        <Nav.Item className="fork-btn github-svg">
                             <Button
                                 href="https://github.com/swapnilkr/CodeGraffiti"
                                 target="_blank"
