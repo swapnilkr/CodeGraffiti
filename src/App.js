@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "./components/Preloader";
 import NavBar from "./components/Navbar";
 import HomeTSA from "./components/Home/HomeTSA";
+import Whoiam from "./components/About/Whoiam.js";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -33,6 +34,7 @@ function App() {
       <NavBar />
       <Routes>
           <Route path="/" element={<HomeTSA />} />
+          <Route path="/whoiam" element={<Whoiam />} />
           <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <ScrollToTop />

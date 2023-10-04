@@ -331,25 +331,29 @@ button:focus {
         position: inherit;
         width: 100%;
     }
-    .github-svg a{
+
+    .github-svg a {
         width: calc(2.2rem + 19px) !important;
     }
 }
 
 @media (max-width: 700px) {
-    .nav-item{
+    .nav-item {
         display: flex;
         justify-content: center;
     }
+
     .navbar-nav .nav-item a svg {
         position: inherit;
         width: auto;
     }
-    .github-svg a{
+
+    .github-svg a {
         width: calc(2.2rem + 65px) !important;
     }
-    .github-svg svg{
-        padding: 0px 5px ;
+
+    .github-svg svg {
+        padding: 0px 5px;
     }
 }
 
