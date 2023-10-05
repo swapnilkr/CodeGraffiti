@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
 // import Github from "./Github";
-// import Techstack from "./Techstack";
+import Skillset from "./Skillset";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 // import Toolstack from "./Toolstack";
@@ -35,11 +35,11 @@ function Whoiam() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h1 className="project-heading" style={{textAlign: "center"}}>
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
-        {/* <Techstack /> */}
+        <Skillset />
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
