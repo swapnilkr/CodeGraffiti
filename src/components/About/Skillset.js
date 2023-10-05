@@ -17,9 +17,9 @@ import {
 import {
     SiRedis,
     SiNginx,
-    SiPostman,
     SiTypescript,
-    SiGraphql
+    SiGraphql,
+    SiVtex
 } from "react-icons/si";
 
 function Skillset() {
@@ -30,6 +30,9 @@ function Skillset() {
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiJavascript1 />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                <SiVtex />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <SiGraphql />
@@ -44,28 +47,17 @@ function Skillset() {
                 <SiTypescript />
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiPostman />
-            </Col>
-
-            <Col xs={4} md={2} className="tech-icons">
                 <DiMongodb />
             </Col>
-
             <Col xs={4} md={2} className="tech-icons">
                 <SiRedis />
             </Col>
-
             <Col xs={4} md={2} className="tech-icons">
                 <SiNginx />
             </Col>
-
             <Col xs={4} md={2} className="tech-icons">
                 <DiAws />
             </Col>
-            <Col xs={4} md={2} className="tech-icons">
-                <DiGulp />
-            </Col>
-
             <Col xs={4} md={2} className="tech-icons">
                 <DiPython />
             </Col>

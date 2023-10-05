@@ -5,7 +5,7 @@ import Particle from "../Particles";
 import Skillset from "./Skillset";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
-// import Toolstack from "./Toolstack";
+import Toolset from "./Toolset";
 
 function Whoiam() {
   return (
@@ -44,9 +44,9 @@ function Whoiam() {
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        {/* <Toolstack />
+        <Toolset />
 
-        <Github /> */}
+        {/* <Github /> */}
       </Container>
     </Container>
   );
