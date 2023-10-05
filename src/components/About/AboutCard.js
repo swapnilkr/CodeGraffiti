@@ -29,24 +29,25 @@ function AboutCard() {
                         </i>.
                         <br />
                         <br />
-                        <h5>Achievements</h5>
+                        <h5 style={{textAlign: "center"}}>Achievements</h5>
                         <ul>
-                            <li>3-star CodeChef programmer.</li>
-                            <li>Ranked #50 in Dare2Complete Online Hackathon Festival (OHF) by IIIT Delhi.</li>
-                            <li>Achieved an all-time best global ranking of #289 in HackerBlocks.</li>
-                            <li>Second runner-up in a SCE Hackathon.</li>
-                            <li>Ranked #521 (out of 30,000) in an event by Coding Ninjas.</li>
+                            <li><span className="purple">3-star</span> CodeChef programmer.</li>
+                            <li>Ranked <span className="purple">#50</span> in Dare2Complete Online Hackathon Festival (OHF) by IIIT Delhi.</li>
+                            <li>Achieved an all-time best global ranking of <span className="purple">#289</span> in HackerBlocks.</li>
+                            <li><span className="purple">2nd</span> runner-up in a SCE Hackathon.</li>
+                            <li>Ranked <span className="purple">#521</span> (out of 30,000) in an event by Coding Ninjas.</li>
                         </ul>
                     </p>
+                    <h5 style={{textAlign: "center"}}>Hobby</h5>
                     <ul>
                         <li className="about-activity">
                             <ImPointRight /> Playing Games
                         </li>
                         <li className="about-activity">
-                            <ImPointRight /> Writing Tech Blogs
+                            <ImPointRight /> Bike Long Drives
                         </li>
                         <li className="about-activity">
-                            <ImPointRight /> Travelling
+                            <ImPointRight /> Exploring Destinations
                         </li>
                     </ul>
 
