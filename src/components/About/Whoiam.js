@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
-// import Github from "./Github";
+import Github from "./Github";
 import Skillset from "./Skillset";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
@@ -46,7 +46,7 @@ function Whoiam() {
         </h1>
         <Toolset />
 
-        {/* <Github /> */}
+        <Github />
       </Container>
     </Container>
   );

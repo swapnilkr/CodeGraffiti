@@ -12,6 +12,13 @@ html {
             rgba(12, 10, 22, 0.863));
 
     --imp-text-color: #c770f0;
+    --react-activity-calendar-level-0: #161b22;
+    --react-activity-calendar-level-1: #0e4429;
+    --react-activity-calendar-level-2: #006d32;
+    --react-activity-calendar-level-3: #26a641;
+    --react-activity-calendar-level-4: #39d353;
+    --react-activity-calendar-loading: #161b22;
+    --react-activity-calendar-loading-active: #1f242b;
 }
 
 .purple {
