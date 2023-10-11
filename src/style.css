@@ -1007,7 +1007,7 @@ button:focus {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -5%;
+    left: calc(100% + 4px);
 }
 
 .timeline-box:nth-child(2n)::after {
