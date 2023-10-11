@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
-
+import Moto from '../../Assets/moto.png'
 
 function Experience() {
 
@@ -10,17 +10,16 @@ function Experience() {
       id: 1,
       title: 'Associate Software Developer',
       company: 'Motorola Mobility - Lenovo',
-      description: 'Re-engineered a legacy third-party software system, introducing a custom user grievance reporting flow.
-      Engineered a dynamic cloud-based user segmentation framework for personalized engagement.
-      Pioneered the development of a Google Dialogflow-powered Gitbot, enabling frictionless purchases.
-      Spearheaded a 50% reduction in menu page load times.
-      Orchestrated the deployment of an adaptive user segmentation banner for targeted promotions and surveys.
-      Standardized and harmonized design elements across an extensive portfolio of 623 UI screens.
-      Seamlessly delivered beta, soft, and prod launches to 11 million devices.
-      Orchestrated the implementation of a cloud-delivered dialog interface for sophisticated push notifications.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
-      startDate: 'idk',
-      endDate: 'idk'
+      description: `Re-engineered legacy third-party software system, yielding annual savings of <span class="purple">320K</span> INR.
+      Managed successful launches to <span class="purple">11 million</span> devices.
+      Standardized design elements across <span class="purple">623 UI </span> screens.
+      Pioneered Google <span class="purple">Dialogflow-powered Giftbot</span> enabling frictionless purchases.
+      Attained <span class="purple">50%</span> reduction in menu page load times.
+      Deployed dynamic user segmentation banner for precise promotions and surveys.
+      Implemented <span class="purple">cloud-based dialog</span> interface for streamlined push notifications.`,
+      imageUrl: Moto,
+      startDate: 'Aug 2023',
+      endDate: 'Present'
     },
     {
       id: 1,
@@ -67,9 +66,13 @@ function Experience() {
                   </h4>
                   <h5 class="experience-duration m0">
                     {key?.startDate} - {key?.endDate}</h5>
-                  <p class="experience-description text-align-justify">
-                    {key?.description}
-                  </p>
+                  <ul class="experience-description text-align-justify">
+                    {key.description.split('\n').map((point, i) => (
+                      <li key={i}>
+                        <span dangerouslySetInnerHTML={{ __html: point }} />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}

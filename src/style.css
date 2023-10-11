@@ -984,10 +984,10 @@ button:focus {
 
 .timeline-box {
     margin: 5px;
-    width: 40%;
+    width: calc(48% - 15px);
     min-height: 150px;
     position: relative;
-    left: 5%;
+    left: 2%;
     text-align: right;
 }
 
@@ -1007,7 +1007,7 @@ button:focus {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -5%;
 }
 
 .timeline-box:nth-child(2n)::after {
@@ -1060,6 +1060,7 @@ button:focus {
 }
 
 .experience-designation {
+    color: #e1bdf2;
     font-size: 1.4rem;
 }
 
@@ -1073,17 +1074,25 @@ button:focus {
 .experience-duration {
     color: #9e9b9b;
     font-weight: 100;
-    color: grey;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
 }
 
 .experience-description {
     font-size: 14px;
     padding: 2px;
-    color: grey;
+    color: antiquewhite;
+    opacity: 0.8;
     line-height: 20px;
 }
 
+.experience-description li span {
+    word-break: break-all;
+}
+
+.experience-description .purple {
+    color: var(--imp-text-color) !important;
+}
 
 .text-align-justify {
     text-align: justify;

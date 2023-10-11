@@ -15,7 +15,7 @@ function AboutCard() {
                             <b className="purple">{" "}
                                 Motorola Mobility
                             </b>
-                        </i>. Our tech stack includes
+                        </i>. Our tech stack includes {" "}
                         <i>
                             <b className="purple">
                                 React, JS, TS, VTEX, Rest API & GraphQL
