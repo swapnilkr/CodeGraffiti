@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
 import Moto from '../../Assets/moto.png'
+import Sparks from '../../Assets/Sparks.png'
 
 function Experience() {
 
@@ -22,8 +23,19 @@ function Experience() {
       endDate: 'Present'
     },
     {
+      id: 2,
+      title: 'Intern',
+      company: 'Sparks Foundation',
+      description: `Architected and deployed a MERN stack Netflix clone.
+      Fortified data security with JWT-based user authentication and Crypto.js password hashing.
+      Streamlined movie content management with Context API, enabling seamless CRUD operations on the admin side.`,
+      imageUrl: Sparks,
+      startDate: 'July 2021',
+      endDate: 'Aug 2021'
+    },
+    {
       id: 1,
-      title: 'sd;lkl;sd',
+      title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
       imageUrl: 'experience1.jpg', // Replace with your image URL
@@ -39,7 +51,33 @@ function Experience() {
       startDate: 'idk',
       endDate: 'idk'
     },
-
+    {
+      id: 1,
+      title: 'Front-end Developer',
+      company: 'ABC Tech',
+      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
+      imageUrl: 'experience1.jpg', // Replace with your image URL
+      startDate: 'idk',
+      endDate: 'idk'
+    },
+    {
+      id: 1,
+      title: 'Front-end Developer',
+      company: 'ABC Tech',
+      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
+      imageUrl: 'experience1.jpg', // Replace with your image URL
+      startDate: 'idk',
+      endDate: 'idk'
+    },
+    {
+      id: 1,
+      title: 'Front-end Developer',
+      company: 'ABC Tech',
+      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
+      imageUrl: 'experience1.jpg', // Replace with your image URL
+      startDate: 'idk',
+      endDate: 'idk'
+    }
   ]
 
   return (
@@ -56,7 +94,7 @@ function Experience() {
               <div class="timeline-box">
                 <div class="timeline-conatiner">
                   <div class="timeline-logo">
-                    <img src={key.imageUrl} />
+                    <img style={{borderRadius: (key?.company === "Sparks Foundation" ? '20px' : '' )}} src={key.imageUrl} />
                   </div>
                   <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
                     {key.title}
