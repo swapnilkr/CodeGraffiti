@@ -28,7 +28,7 @@ function Experience() {
       company: 'Sparks Foundation',
       description: `Architected and deployed a MERN stack Netflix clone.
       Fortified data security with JWT-based user authentication and Crypto.js password hashing.
-      Streamlined movie content management with Context API, enabling seamless CRUD operations on the admin side.`,
+      Streamlined movie content management with Context API, enabling seamless CRUD operation on admin side.`,
       imageUrl: Sparks,
       startDate: 'July 2021',
       endDate: 'Aug 2021'
