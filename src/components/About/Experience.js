@@ -38,7 +38,7 @@ function Experience() {
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
+      imageUrl: 'experience1.jpg',
       startDate: 'idk',
       endDate: 'idk'
     },
@@ -47,7 +47,7 @@ function Experience() {
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
+      imageUrl: 'experience1.jpg',
       startDate: 'idk',
       endDate: 'idk'
     },
@@ -56,7 +56,7 @@ function Experience() {
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
+      imageUrl: 'experience1.jpg',
       startDate: 'idk',
       endDate: 'idk'
     },
@@ -65,7 +65,7 @@ function Experience() {
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
+      imageUrl: 'experience1.jpg',
       startDate: 'idk',
       endDate: 'idk'
     },
@@ -74,7 +74,7 @@ function Experience() {
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg', // Replace with your image URL
+      imageUrl: 'experience1.jpg',
       startDate: 'idk',
       endDate: 'idk'
     }
