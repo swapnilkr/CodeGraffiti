@@ -81,7 +81,6 @@ function Experience() {
   ]
 
   return (
-    
     <Container fluid className="experience-section">
       <Particle />
       <Row>
