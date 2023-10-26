@@ -26,9 +26,9 @@ function Experience() {
       id: 2,
       title: 'Intern',
       company: 'Sparks Foundation',
-      description: `Architected and deployed a MERN stack Netflix clone.
-      Fortified data security with JWT-based user authentication and Crypto.js password hashing.
-      Streamlined movie content management with Context API, enabling seamless CRUD operation on admin side.`,
+      description: `Created "Pockket," a dynamic Node.js-based payment gateway with MongoDB integration.
+      Implemented Passport for local and Google OAuth2 for user authentication and authorization.
+      Utilized MessageBird API for OTP verification.`,
       imageUrl: Sparks,
       startDate: 'July 2021',
       endDate: 'Aug 2021'
@@ -80,7 +80,7 @@ function Experience() {
     }
   ]
 
-  
+
   return (
     <Container fluid className="experience-section">
       <Particle />
@@ -95,7 +95,7 @@ function Experience() {
               <div class="timeline-box">
                 <div class="timeline-conatiner">
                   <div class="timeline-logo">
-                    <img style={{borderRadius: (key?.company === "Sparks Foundation" ? '20px' : '' )}} src={key.imageUrl} />
+                    <img style={{ borderRadius: (key?.company === "Sparks Foundation" ? '20px' : '') }} src={key.imageUrl} />
                   </div>
                   <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
                     {key.title}
