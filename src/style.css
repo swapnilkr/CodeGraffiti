@@ -1031,9 +1031,9 @@ button:focus {
 
 .timeline-divider {
     position: absolute;
-    width: 0;
+    /* width: 0; */
     left: 50%;
-    border: 1px dashed #58b2dc;
+    border-left: 1px dashed #58b2dc;
     color: #433E3F;
 }
 
@@ -1059,8 +1059,8 @@ button:focus {
     color: purple;
     height: 24px;
     width: 24px;
-    position: fixed;
-    left: calc(50% - 22.5px);
+    position: relative;
+    left: -12px;
 }
 
 .experience-designation {

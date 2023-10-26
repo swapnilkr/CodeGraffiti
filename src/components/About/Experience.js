@@ -7,7 +7,8 @@ import Softora from "../../Assets/Softora.png"
 import CodeSpeedy from "../../Assets/CodeSpeedy.png"
 import TCS from "../../Assets/TCS.png"
 import IStudio from "../../Assets/ISudtio.png"
-import {BsFillAirplaneFill} from "react-icons/bs";
+import { BsFillAirplaneFill } from "react-icons/bs";
+import Education from "./Education"
 
 
 function Experience() {
@@ -95,49 +96,54 @@ function Experience() {
 
 
   return (
-    <Container fluid className="experience-section">
-      <Particle />
-      <Row>
-        <section id="experience" style={{ justifyContent: "center" }}>
-          <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", textAlign: "center" }}>
-            <strong className="purple">Experience</strong>
-          </h1>
+    <>
+      <Container fluid className="experience-section">
+        <Particle />
+        <Row>
+          <section id="experience" style={{ justifyContent: "center" }}>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", textAlign: "center" }}>
+              <strong className="purple">Experience</strong>
+            </h1>
 
-          <div class="timeline">
-            {experienceList.map((key, index) => (
-              <div class="timeline-box">
-                <div class="timeline-conatiner">
-                  <div class="timeline-logo">
-                    <img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6  ? '20px' : '') }} src={key.imageUrl} />
+            <div class="timeline">
+              {experienceList.map((key, index) => (
+                <div class="timeline-box">
+                  <div class="timeline-conatiner">
+                    <div class="timeline-logo">
+                      <img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6 ? '20px' : '') }} src={key.imageUrl} />
+                    </div>
+                    <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
+                      {key.title}
+                    </h3>
+                    <h4 class="experience-company-name">
+                      {key.company}
+                    </h4>
+                    <h5 class="experience-duration m0">
+                      {key?.startDate} - {key?.endDate}</h5>
+                    <ul class="experience-description text-align-justify">
+                      {key.description.split('\n').map((point, i) => (
+                        <li key={i}>
+                          <span dangerouslySetInnerHTML={{ __html: point }} />
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
-                    {key.title}
-                  </h3>
-                  <h4 class="experience-company-name">
-                    {key.company}
-                  </h4>
-                  <h5 class="experience-duration m0">
-                    {key?.startDate} - {key?.endDate}</h5>
-                  <ul class="experience-description text-align-justify">
-                    {key.description.split('\n').map((point, i) => (
-                      <li key={i}>
-                        <span dangerouslySetInnerHTML={{ __html: point }} />
-                      </li>
-                    ))}
-                  </ul>
+                </div>
+              ))}
+              <div class="timeline-divider plane">
+                <div class="timeline-traveller">
+                  <BsFillAirplaneFill />
                 </div>
               </div>
-            ))}
-            <div class="timeline-divider plane">
-              <div class="timeline-traveller">
-                <BsFillAirplaneFill />
-              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-      </Row>
-    </Container>
+        </Row>
+
+      </Container>
+      <Education />
+    </>
+
   )
 
 }
