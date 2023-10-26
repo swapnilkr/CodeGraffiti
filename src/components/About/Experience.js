@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
 import Moto from '../../Assets/moto.png'
 import Sparks from '../../Assets/Sparks.png'
+import Softora from "../../Assets/Softora.png"
+import CodeSpeedy from "../../Assets/CodeSpeedy.png"
 
 function Experience() {
 
@@ -26,33 +28,35 @@ function Experience() {
       id: 2,
       title: 'Intern',
       company: 'Sparks Foundation',
-      description: `Created "Pockket," a dynamic Node.js-based payment gateway with MongoDB integration.
-      Implemented Passport for local and Google OAuth2 for user authentication and authorization.
-      Utilized MessageBird API for OTP verification.`,
+      description: `Integrated <span class="purple">Google OAuth2 </span> for advanced user login, enhancing security and user convenience.
+      Significantly improved user auth, leading to heightened security and seamless login experience.`,
       imageUrl: Sparks,
       startDate: 'July 2021',
       endDate: 'Aug 2021'
     },
     {
-      id: 1,
-      title: 'Front-end Developer',
-      company: 'ABC Tech',
-      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg',
-      startDate: 'idk',
-      endDate: 'idk'
+      id: 3,
+      title: 'Intern',
+      company: 'Softora Tech Pvt Ltd',
+      description: `Created "Pockket," a dynamic <span class="purple">Node.js</span>-based payment gateway with MongoDB integration.
+      Implemented Passport for local and Google OAuth2 for user authentication and authorization.
+      Utilized MessageBird API for OTP verification.`,
+      imageUrl: Softora,
+      startDate: 'Apr 2021',
+      endDate: 'May 2021'
     },
     {
-      id: 1,
-      title: 'Front-end Developer',
-      company: 'ABC Tech',
-      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg',
-      startDate: 'idk',
-      endDate: 'idk'
+      id: 4,
+      title: 'Intern',
+      company: 'CodeSpeedy Tech Pvt Ltd',
+      description: `Lossless Text Compressed .txt into .bin file; DS- hashing, binary trees, priority queues
+      Achieved reduction of file size by <span class="purple">50%</span>(compression) by Huffman coding on padded text`,
+      imageUrl: CodeSpeedy,
+      startDate: 'Feb 2021',
+      endDate: 'Mar 2021'
     },
     {
-      id: 1,
+      id: 5,
       title: 'Front-end Developer',
       company: 'ABC Tech',
       description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
@@ -95,7 +99,7 @@ function Experience() {
               <div class="timeline-box">
                 <div class="timeline-conatiner">
                   <div class="timeline-logo">
-                    <img style={{ borderRadius: (key?.company === "Sparks Foundation" ? '20px' : '') }} src={key.imageUrl} />
+                    <img style={{ borderRadius: (index === 1 || 2  ? '20px' : '') }} src={key.imageUrl} />
                   </div>
                   <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
                     {key.title}
