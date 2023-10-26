@@ -5,6 +5,8 @@ import Moto from '../../Assets/moto.png'
 import Sparks from '../../Assets/Sparks.png'
 import Softora from "../../Assets/Softora.png"
 import CodeSpeedy from "../../Assets/CodeSpeedy.png"
+import TCS from "../../Assets/TCS.png"
+import IStudio from "../../Assets/ISudtio.png"
 
 function Experience() {
 
@@ -49,38 +51,43 @@ function Experience() {
       id: 4,
       title: 'Intern',
       company: 'CodeSpeedy Tech Pvt Ltd',
-      description: `Lossless Text Compressed .txt into .bin file; DS- hashing, binary trees, priority queues
-      Achieved reduction of file size by <span class="purple">50%</span>(compression) by Huffman coding on padded text`,
+      description: `Lossless Text Compressed .txt into .bin file; DS- hashing, binary trees, priority queues.
+      Achieved reduction of file size by <span class="purple">50%</span>(compression) by Huffman coding on padded text.`,
       imageUrl: CodeSpeedy,
       startDate: 'Feb 2021',
       endDate: 'Mar 2021'
     },
     {
       id: 5,
-      title: 'Front-end Developer',
-      company: 'ABC Tech',
-      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg',
-      startDate: 'idk',
-      endDate: 'idk'
+      title: 'Intern',
+      company: 'Tata Consultacy Service',
+      description: `Developed deep learning algorithm to automate detection of different sentiments from textual comments.
+      To infer the sentiment used two classifiers: logistic regression and multinomial naive Bayes, tuned the hyperparameters of both classifiers with grid search.
+      <span class="purple">10%</span> reduction in human effort by cleaning & processing feedback; achieving accuracy of <span class="purple">0.80</span>`,
+      imageUrl: TCS,
+      startDate: 'Dec 2020',
+      endDate: 'Jan 2021'
     },
     {
-      id: 1,
-      title: 'Front-end Developer',
-      company: 'ABC Tech',
-      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg',
-      startDate: 'idk',
-      endDate: 'idk'
+      id: 6,
+      title: 'Intern',
+      company: 'Internship Studio',
+      description: `Created a responsive e-commerce website with 10 essential web pages.
+      Utilized HTML5, CSS, JavaScript, and Bootstrap for design and functionality.
+      Ensured website responsiveness and mobile-friendliness with Bootstrap.`,
+      imageUrl: IStudio,
+      startDate: 'Oct 2020',
+      endDate: 'Nov 2020'
     },
     {
-      id: 1,
-      title: 'Front-end Developer',
-      company: 'ABC Tech',
-      description: 'Worked on creating user-friendly and responsive web applications using React, HTML, CSS, and JavaScript.',
-      imageUrl: 'experience1.jpg',
-      startDate: 'idk',
-      endDate: 'idk'
+      id: 7,
+      title: 'Intern',
+      company: 'Internship Studio',
+      description: `Implemented ML libraries to build a model for identifying the potential customers who have higher probability of purchasing the loan thus reducing the cost of campaign.
+      Used different scikit-learn algorithms to predict the likelihood of customer buying the loans, in all RANDOM FOREST had the most accuracy score of <span class="purple">95.11 %</span>.`,
+      imageUrl: IStudio,
+      startDate: 'July 2020',
+      endDate: 'Aug 2020'
     }
   ]
 
@@ -99,7 +106,7 @@ function Experience() {
               <div class="timeline-box">
                 <div class="timeline-conatiner">
                   <div class="timeline-logo">
-                    <img style={{ borderRadius: (index === 1 || 2  ? '20px' : '') }} src={key.imageUrl} />
+                    <img style={{ borderRadius: (index === 1 || index === 2  ? '20px' : '') }} src={key.imageUrl} />
                   </div>
                   <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
                     {key.title}
