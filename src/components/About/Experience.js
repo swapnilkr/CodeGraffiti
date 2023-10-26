@@ -7,6 +7,8 @@ import Softora from "../../Assets/Softora.png"
 import CodeSpeedy from "../../Assets/CodeSpeedy.png"
 import TCS from "../../Assets/TCS.png"
 import IStudio from "../../Assets/ISudtio.png"
+import {BsFillAirplaneFill} from "react-icons/bs";
+
 
 function Experience() {
 
@@ -106,7 +108,7 @@ function Experience() {
               <div class="timeline-box">
                 <div class="timeline-conatiner">
                   <div class="timeline-logo">
-                    <img style={{ borderRadius: (index === 1 || index === 2  ? '20px' : '') }} src={key.imageUrl} />
+                    <img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6  ? '20px' : '') }} src={key.imageUrl} />
                   </div>
                   <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
                     {key.title}
@@ -128,7 +130,7 @@ function Experience() {
             ))}
             <div class="timeline-divider plane">
               <div class="timeline-traveller">
-                <i class="fas fa-plane"></i>
+                <BsFillAirplaneFill />
               </div>
             </div>
           </div>

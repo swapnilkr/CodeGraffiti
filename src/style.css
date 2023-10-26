@@ -1043,8 +1043,8 @@ button:focus {
 }
 
 .plane {
-    top: 2%;
-    height: 82%;
+    top: 5%;
+    height: 86%;
 }
 
 .timeline-divider .timeline-traveller {
@@ -1053,11 +1053,14 @@ button:focus {
     z-index: 2;
 }
 
-.timeline-divider i {
-    transform: rotate(90deg);
-    margin-top: -35px;
+.timeline-divider svg {
+    transform: rotate(180deg);
     display: block;
-    color: #2857a4;
+    color: purple;
+    height: 24px;
+    width: 24px;
+    position: fixed;
+    left: calc(50% - 22.5px);
 }
 
 .experience-designation {
