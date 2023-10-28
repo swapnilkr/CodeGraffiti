@@ -27,6 +27,7 @@ function Skillset() {
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
             <Col xs={4} md={2} className="tech-icons">
                 <DiReact />
+                {/* <span className="tech-name">React</span> */}
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 <DiJavascript1 />
