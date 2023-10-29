@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
@@ -23,49 +23,119 @@ import {
 } from "react-icons/si";
 
 function Skillset() {
+    const [isLogoVisible, setIsLogoVisible] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIsLogoVisible((prev) => !prev);
+        }, 3000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [])
+
+
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-            <Col xs={4} md={2} className="tech-icons">
-                <DiReact />
+            <Col xs={4} md={2} className={`tech-icons`}>
+                {isLogoVisible ?
+                    <DiReact className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">React</span>
+                }
+
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiJavascript1 />
+                {isLogoVisible ?
+                    <DiJavascript1 className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">JS</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiVtex />
+                {isLogoVisible ?
+                    <SiVtex className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Vtex</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiGraphql />
+                {isLogoVisible ?
+                    <SiGraphql className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">GraphQL</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiNodejs />
+                {isLogoVisible ?
+                    <DiNodejs className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Node. js</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiGit />
+                {isLogoVisible ?
+                    <DiGit className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Git</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiTypescript />
+                {isLogoVisible ?
+                    <SiTypescript className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">TS</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiMongodb />
+                {isLogoVisible ?
+                    <DiMongodb className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">MongoDb</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiRedis />
+                {isLogoVisible ?
+                    <SiRedis className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Redis</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <SiNginx />
+                {isLogoVisible ?
+                    <SiNginx className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Nginx</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiAws />
+                {isLogoVisible ?
+                    <DiAws className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">AWS</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <DiPython />
+                {isLogoVisible ?
+                    <DiPython className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Python</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <BiLogoSass />
+                {isLogoVisible ?
+                    <BiLogoSass className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Sass</span>
+                }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
-                <CgCPlusPlus />
+                {isLogoVisible ?
+                    <CgCPlusPlus className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">C++</span>
+                }
             </Col>
         </Row>
     );
