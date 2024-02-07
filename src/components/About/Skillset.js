@@ -14,12 +14,14 @@ import {
 import {
     BiLogoSass
 } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
 import {
     SiRedis,
     SiNginx,
     SiTypescript,
     SiGraphql,
-    SiVtex
+    SiVtex,
+    SiTailwindcss
 } from "react-icons/si";
 
 function Skillset() {
@@ -48,6 +50,13 @@ function Skillset() {
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 {isLogoVisible ?
+                    <TbBrandNextjs className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Next .js</span>
+                }
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                {isLogoVisible ?
                     <DiJavascript1 className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">JS</span>
@@ -65,6 +74,13 @@ function Skillset() {
                     <SiGraphql className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">GraphQL</span>
+                }
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                {isLogoVisible ?
+                    <SiTailwindcss className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Next .js</span>
                 }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
@@ -128,13 +144,6 @@ function Skillset() {
                     <BiLogoSass className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">Sass</span>
-                }
-            </Col>
-            <Col xs={4} md={2} className="tech-icons">
-                {isLogoVisible ?
-                    <CgCPlusPlus className="skillset-logo fadeinoutLogo" />
-                    :
-                    <span className="tech-name fadeinoutName">C++</span>
                 }
             </Col>
         </Row>
