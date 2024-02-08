@@ -4,6 +4,7 @@ import NavBar from "./components/Navbar";
 import HomeTSA from "./components/Home/HomeTSA";
 import Whoiam from "./components/About/Whoiam.js";
 import Experience from "./components/About/Experience.js";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import {
 	BrowserRouter as Router,
@@ -38,6 +39,7 @@ function App() {
 				<Route path="/" element={<HomeTSA />} />
 				<Route path="/whoiam" element={<Whoiam />} />
 				<Route path="/experience" element={<Experience />} />
+				<Route path="/project" element={<Projects />} />
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 			<ScrollToTop />
