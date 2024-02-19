@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/CodeGraffiti/static/css/main.aa5d2120.css",
-    "main.js": "/CodeGraffiti/static/js/main.76932a0a.js",
+    "main.css": "/CodeGraffiti/static/css/main.aa160bce.css",
+    "main.js": "/CodeGraffiti/static/js/main.3739f1fa.js",
     "static/js/787.1ed0c42c.chunk.js": "/CodeGraffiti/static/js/787.1ed0c42c.chunk.js",
     "static/media/Netflix.mp4": "/CodeGraffiti/static/media/Netflix.d86d82a4c6fe47373134.mp4",
     "static/media/NetNexus.mp4": "/CodeGraffiti/static/media/NetNexus.2ba20bc651fe0f4d7ef7.mp4",
     "static/media/Dhun.mp4": "/CodeGraffiti/static/media/Dhun.e725a439e20c6a0ee12a.mp4",
+    "static/media/SWAPNIL_CV.pdf": "/CodeGraffiti/static/media/SWAPNIL_CV.1513962f93644a09c701.pdf",
     "static/media/ISudtio.png": "/CodeGraffiti/static/media/ISudtio.2a5060756ec3cee6113c.png",
     "static/media/Dhun.JPG": "/CodeGraffiti/static/media/Dhun.7afa927337191f61a8c2.JPG",
     "static/media/Netflix.JPG": "/CodeGraffiti/static/media/Netflix.81b8e1b8ea66e1342337.JPG",
@@ -23,12 +24,12 @@
     "static/media/divine.png": "/CodeGraffiti/static/media/divine.e9dc1986e924c68624cd.png",
     "static/media/avatar.svg": "/CodeGraffiti/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "index.html": "/CodeGraffiti/index.html",
-    "main.aa5d2120.css.map": "/CodeGraffiti/static/css/main.aa5d2120.css.map",
-    "main.76932a0a.js.map": "/CodeGraffiti/static/js/main.76932a0a.js.map",
+    "main.aa160bce.css.map": "/CodeGraffiti/static/css/main.aa160bce.css.map",
+    "main.3739f1fa.js.map": "/CodeGraffiti/static/js/main.3739f1fa.js.map",
     "787.1ed0c42c.chunk.js.map": "/CodeGraffiti/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa5d2120.css",
-    "static/js/main.76932a0a.js"
+    "static/css/main.aa160bce.css",
+    "static/js/main.3739f1fa.js"
   ]
 }
