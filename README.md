@@ -1,6 +1,6 @@
 <h1 align="center" id="title">CodeGraffiti</h1>
 
-<p id="description">This repository contains the source code for my personal portfolio website. The website is built using React.js and styled with CSS. It showcases my projects, skills, and experiences as a software engineer.</p>
+<p id="description">Welcome to CodeGraffiti, my canvas of creativity! 🎨 This GitHub repository showcases my journey in the world of web development, with a primary focus on frontend development using React. Explore a dynamic and interactive portfolio website that reflects my passion for crafting beautiful and functional user interfaces.</p>
 
 <h2>🚀 Demo</h2>
 
