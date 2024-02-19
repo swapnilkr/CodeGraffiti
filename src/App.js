@@ -16,6 +16,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ResumeDoc from "./components/Resume/ResumeDoc.js";
+
 
 function App() {
 
@@ -40,6 +42,7 @@ function App() {
 				<Route path="/whoiam" element={<Whoiam />} />
 				<Route path="/experience" element={<Experience />} />
 				<Route path="/project" element={<Projects />} />
+				<Route path="/resume" element={<ResumeDoc />} />
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 			<ScrollToTop />
