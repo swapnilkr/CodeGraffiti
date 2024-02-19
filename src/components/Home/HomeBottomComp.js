@@ -22,15 +22,32 @@ function HomeBottomComp() {
             <p className="home-about-body">
               🌟 Embarking on a journey through the digital realm, I stumbled upon a love for crafting web wonders.
               <br />
-              <br /> 💻 An Associate Software Developer at&nbsp;
+              <br /> 💻 As a Software Engineer at&nbsp;
               <i>
                 <b className="purple">Motorola Mobility</b>
               </i>
-              , &nbsp;where I'm immersed in an exciting marketplace project built on the dynamic stack of&nbsp;
+              , &nbsp;I've contributed to various projects. This includes- &nbsp;
+              <br />
+              ⚡
               <i>
-                <b className="purple">React, JS, TS, VTEX & GraphQL</b>
+                <b className="purple">Hello Shop</b>
               </i>
-              .
+              , &nbsp;a Brazil-centric e-commerce platform based on React, JS, TS, VTEX & GraphQL
+              ;
+              <br />
+              ⚡
+              <i>
+                <b className="purple">Hello You</b>
+              </i>
+              , &nbsp;a content delivery platform, based on React.js;
+              <br />
+              ⚡
+              <i>
+                <b className="purple">Moto Engage CRM</b>
+              </i>
+              , &nbsp;a personalized consumer engagement platform based on Angular, GCP.
+              <br />
+              These endeavors underline my proficiency in developing tailored solutions for diverse market segments.
               <br />
               <br />
               🌐 I unleash my coding creativity with the likes of&nbsp;

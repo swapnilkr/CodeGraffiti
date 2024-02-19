@@ -12,7 +12,7 @@ function Github() {
         username="swapnilkr"
         blockSize={15}
         blockMargin={5}
-        year={2021}
+        year='last'
         colorScheme='dark'
         theme = {{
           dark : [

@@ -10,7 +10,7 @@ function AboutCard() {
                     <p style={{ textAlign: "justify" }}>
                         Hi Everyone, I am <span className="purple">Swapnil </span>
                         from <span className="purple"> Bhagalpur, India.</span>
-                        <br /> I'm currently immersed in an exciting marketplace project at 
+                        <br /> I'm currently a Software Developer at
                         <i>
                             <b className="purple">{" "}
                                 Motorola Mobility
@@ -18,7 +18,7 @@ function AboutCard() {
                         </i>. Our tech stack includes {" "}
                         <i>
                             <b className="purple">
-                                React, JS, TS, VTEX, Rest API & GraphQL
+                                React, JS, TS, VTEX, Angular, GCP, Rest API & GraphQL
                             </b>
                         </i>.
                         <br />
@@ -31,7 +31,7 @@ function AboutCard() {
                         <br />
                         <h5 style={{textAlign: "center"}}>Achievements</h5>
                         <ul>
-                            <li><span className="purple">3-star</span> CodeChef programmer.</li>
+                            <li><span className="purple">Enhanced Python Code GFG:</span> Count Unique Paths in Matrix</li>
                             <li>Ranked <span className="purple">#50</span> in Dare2Complete Online Hackathon Festival (OHF) by IIIT Delhi.</li>
                             <li>Achieved an all-time best global ranking of <span className="purple">#289</span> in HackerBlocks.</li>
                             <li><span className="purple">2nd</span> runner-up in a SCE Hackathon.</li>

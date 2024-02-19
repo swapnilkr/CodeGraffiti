@@ -23,6 +23,8 @@ import {
     SiVtex,
     SiTailwindcss
 } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
+
 
 function Skillset() {
     const [isLogoVisible, setIsLogoVisible] = useState(true);
@@ -64,6 +66,13 @@ function Skillset() {
             </Col>
             <Col xs={4} md={2} className="tech-icons">
                 {isLogoVisible ?
+                    <FaAngular className="skillset-logo fadeinoutLogo" />
+                    :
+                    <span className="tech-name fadeinoutName">Angular</span>
+                }
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+                {isLogoVisible ?
                     <SiVtex className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">Vtex</span>
@@ -80,7 +89,7 @@ function Skillset() {
                 {isLogoVisible ?
                     <SiTailwindcss className="skillset-logo fadeinoutLogo" />
                     :
-                    <span className="tech-name fadeinoutName">Next .js</span>
+                    <span className="tech-name fadeinoutName">Tailwind CSS</span>
                 }
             </Col>
             <Col xs={4} md={2} className="tech-icons">
@@ -118,20 +127,20 @@ function Skillset() {
                     <span className="tech-name fadeinoutName">Redis</span>
                 }
             </Col>
-            <Col xs={4} md={2} className="tech-icons">
+            {/* <Col xs={4} md={2} className="tech-icons">
                 {isLogoVisible ?
                     <SiNginx className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">Nginx</span>
                 }
-            </Col>
-            <Col xs={4} md={2} className="tech-icons">
+            </Col> */}
+            {/* <Col xs={4} md={2} className="tech-icons">
                 {isLogoVisible ?
                     <DiAws className="skillset-logo fadeinoutLogo" />
                     :
                     <span className="tech-name fadeinoutName">AWS</span>
                 }
-            </Col>
+            </Col> */}
             <Col xs={4} md={2} className="tech-icons">
                 {isLogoVisible ?
                     <DiPython className="skillset-logo fadeinoutLogo" />
