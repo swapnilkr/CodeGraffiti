@@ -73,9 +73,9 @@ function NavBar() {
                             }
                             show={dropdownExpand}
                             onClick={() => setDropdownExpand(!dropdownExpand)}
-                            onBlur={() => setDropdownExpand(!dropdownExpand)}
-                            onMouseEnter={() => setDropdownExpand(true)}
-                            onMouseLeave={() => setDropdownExpand(false)}
+                            // onBlur={() => setDropdownExpand(!dropdownExpand)}
+                            // onMouseEnter={() => setDropdownExpand(true)}
+                            // onMouseLeave={() => setDropdownExpand(false)}
                         >
                             <Nav.Link as={Link} to="/whoiam" onClick={() => setExpand(false)}>
                                 Who i am

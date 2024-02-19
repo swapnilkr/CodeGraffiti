@@ -116,7 +116,7 @@ function HomeBottomComp() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://www.instagram.com/s_for._.swapnil/"
                   target="_blank"
@@ -125,7 +125,7 @@ function HomeBottomComp() {
                 >
                   <AiFillInstagram />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </Col>
         </Row>

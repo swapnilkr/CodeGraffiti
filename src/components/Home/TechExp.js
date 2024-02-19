@@ -6,7 +6,7 @@ function TechExp() {
     <Typewriter
       options={{
         strings: [
-          "Software Developer@Motorola",
+          "Software Developer @ Motorola",
           "MERN Stack Developer",
           "Open Source Contributor",
           "Turning Coffee into Code"
