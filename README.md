@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">CodeGraffiti</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p id="description">This repository contains the source code for my personal portfolio website. The website is built using React.js and styled with CSS. It showcases my projects, skills, and experiences as a software engineer.</p>
 
-## Available Scripts
+<h2>🚀 Demo</h2>
 
-In the project directory, you can run:
+<a href="https://swapnilkr.github.io/CodeGraffiti/">CodeGraffiti.com</a>
 
-### `npm start`
+<h2>Project Walkthrough:</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://github.com/swapnilkr/CodeGraffiti/assets/49485584/fe4885bd-f3b5-4107-a194-4cecd3f83a2b
 
-### `npm test`
+https://github.com/swapnilkr/CodeGraffiti/assets/49485584/cf0f7c66-24cc-4382-ba60-3de0af4270c7
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/swapnilkr/CodeGraffiti/assets/49485584/92b485da-c867-4fa2-bf7a-7f51967eda4b
 
-### `npm run build`
+https://github.com/swapnilkr/CodeGraffiti/assets/49485584/e7f5b322-5319-4b7e-af9f-f66902df345f
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>🧐 Features</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Here're some of the project's best features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*   Resume Download page
+*   Know who i am section
+*   Skillset devision
+*   Project Section
 
-### `npm run eject`
+<h2>🛠️ Installation Steps:</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>1. Clone this project</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+https://github.com/swapnilkr/CodeGraffiti.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>2. Change the directory</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+cd src
+```
 
-## Learn More
+<p>3. Install Dependency</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>4. Run this command</p>
 
-### Code Splitting
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>5. Vist -&gt;</p>
 
-### Analyzing the Bundle Size
+```
+http://localhost:8000/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<h2>💻 Built with</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Technologies used in the project:
+<div align="center">
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React"/></code>
+</div>
 
-### Advanced Configuration
+  
+<h2><g-emoji class="g-emoji" alias="handshake" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f91d.png">🤝</g-emoji> Contributing </h2>
+Contributions, issues and feature requests are welcome.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<h2> Author </h2>
+<h3 align="center">Hi 👋, I'm Swapnil</h3>
+<hr>
+<h4 align="center">A passionate full stack web developer.</h4>
 
-### Deployment
+- 👨‍💻 All of my projects are available at [https://github.com/swapnilkr](https://github.com/swapnilkr)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- 📫 How to reach me **swapnilkr099@gmail.com**
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 📄 Know about my experiences [https://swapnilkr.github.io/Build-Your-Virtual-Resume/](https://swapnilkr.github.io/Build-Your-Virtual-Resume/)
