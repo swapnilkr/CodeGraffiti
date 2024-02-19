@@ -16,15 +16,22 @@ function Experience() {
 	const experienceList = [
 		{
 			id: 1,
-			title: 'Associate Software Developer',
+			title: 'Software Engineer',
 			company: 'Motorola Mobility - Lenovo',
-			description: `Re-engineered legacy third-party software system, yielding annual savings of <span class="purple">320K</span> INR.
-			Managed successful launches to <span class="purple">11 million</span> devices.
-			Standardized design elements across <span class="purple">623 UI </span> screens.
-			Pioneered Google <span class="purple">Dialogflow-powered Giftbot</span> enabling frictionless purchases.
-			Attained <span class="purple">50%</span> reduction in menu page load times.
-			Deployed dynamic user segmentation banner for precise promotions and surveys.
-			Implemented <span class="purple">cloud-based dialog</span> interface for streamlined push notifications.`,
+			description: `Hello Shopping: Brazil centric Mobile E-Commerce    (React.js, VTEX, GraphL).
+			Launched to <span class="purple">11M users</span>, with 25k daily engagement; Crafted 21 UX flows, 623 UI screens.
+			<span class="purple">Procured 340k INR</span> savings annually: Super headed migration from third-party software to in house grievance resolution system;Crafted 5 UX flow 15+ UI screens fostering user retention.
+			<span class="purple">Slashed load time by 30%</span>: Optimized orders page with custom pagination leveraging useRef.
+			<span class="purple">9% revenue lift</span>: Developed Dialogflow chatbot, Moto special/blog page fueling product sale.
+			<span class="purple">16% hike</span> notification opt-ins:Developed cloud based dialog interface to solicit push opt-ins.
+			<span class="purple">2% cart conversion lift</span>: Introduced tailored carousel for user cohorts on the cart page.
+			Hello You:Content Delivery platform    (React.js).
+			Integrated WebView for app recommendation,boosting revenue & amplify user-engagement.
+			<span class="purple">Attained 4% CTR</span>: Developed cloud enabled dialog within user cohorts; enhancing user engagement via offers, surveys. Integrated display thresholds to mitigate redundant banner.
+			Moto Engage CRM: Personalized Consumer Engagement platform    (Angular, GCP).
+			Deployed Campaign dashboard for app suggestion;empowering user engagement strategies.
+			Instituted SME app review protocol; upheld quality by mitigating incorrect app publications.
+			Integrated app install from notification in Story dashboard, enhancing CRM functionality`,
 			imageUrl: Moto,
 			startDate: 'Aug 2023',
 			endDate: 'Present'
@@ -43,9 +50,9 @@ function Experience() {
 			id: 3,
 			title: 'Intern',
 			company: 'Softora Tech Pvt Ltd',
-			description: `Created "Pockket," a dynamic <span class="purple">Node.js</span>-based payment gateway with MongoDB integration.
-      		Implemented Passport for local and Google OAuth2 for user authentication and authorization.
-      		Utilized MessageBird API for OTP verification.`,
+			description: `Developed dynamic responsive payment gateway(pockket) using <span class="purple">Node.js, Express, MongoDB</span>.
+			Integrated user’s choice for different payment option; utilized MessageBird for sending OTP. 
+			Utilized Passport for local authentication; Google OAuth2 for authorization (SignIn, SignUp)`,
 			imageUrl: Softora,
 			startDate: 'Apr 2021',
 			endDate: 'May 2021'
@@ -54,8 +61,9 @@ function Experience() {
 			id: 4,
 			title: 'Intern',
 			company: 'CodeSpeedy Tech Pvt Ltd',
-			description: `Lossless Text Compressed .txt into .bin file; DS- hashing, binary trees, priority queues.
-      		Achieved reduction of file size by <span class="purple">50%</span>(compression) by Huffman coding on padded text.`,
+			description: `Achieved <span class="purple">20%</span> reduction in file size using Huffman coding on padded text without data loss.
+			Transformed .txt into .bin format; DS– hashing, binary trees to construct optimal prefix code
+			`,
 			imageUrl: CodeSpeedy,
 			startDate: 'Feb 2021',
 			endDate: 'Mar 2021'
@@ -120,11 +128,29 @@ function Experience() {
 										</h4>
 										<h5 class="experience-duration m0">
 											{key?.startDate} - {key?.endDate}</h5>
-										<ul class="experience-description text-align-justify">
+										<ul style={{ color: index === 0 ? "white" : "" }} class="experience-description text-align-justify">
 											{key.description.split('\n').map((point, i) => (
-												<li key={i}>
-													<span dangerouslySetInnerHTML={{ __html: point }} />
-												</li>
+												<>
+													{((index === 0) && (i === 0 || i === 7 || i === 10)) ?
+														<div key={i} style={{
+															background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
+															borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
+														}}>
+															<span dangerouslySetInnerHTML={{ __html: point }} />
+														</div>
+														:
+
+														<li key={i} style={{
+															background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
+															borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
+														}}>
+															<span dangerouslySetInnerHTML={{ __html: point }} />
+														</li>
+													}
+												</>
+
 											))}
 										</ul>
 									</div>

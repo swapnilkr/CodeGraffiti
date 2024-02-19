@@ -42,7 +42,7 @@ function Projects() {
               imgPath={NetNexus}
               isBlog={false}
               title="NetNexus"
-              description={`Full-stack social media website developed using the <span class="purple">MEN</span> stack. Provides users with features like social interaction like posting, liking, commenting, and real-time chat functionality using WebSockets. The platform integrates Google OAuth for secure user authentication.`}
+              description={`Full-stack collegiate social media website developed using the <span class="purple">MEN</span> stack. Provides users with features like social interaction like posting, liking, commenting, and real-time chat functionality using WebSockets. The platform integrates Google OAuth for secure user authentication.`}
               ghLink="https://github.com/swapnilkr/NetNexus"
               videoPath={NetNexusVideo}
             />
@@ -74,7 +74,7 @@ function Projects() {
               imgPath={LosslessCompression}
               isBlog={false}
               title="Lossless Text Compression"
-              description={`Lossless text compression solution leveraging the Huffman coding algorithm;Achieved reduction of file size by <span class="purple">50%</span>. Used various data structures including hashmaps, trees, priority queues in Python.`}
+              description={`Lossless text compression solution leveraging the Huffman coding algorithm;Achieved reduction of file size by <span class="purple">20%</span>. Used various data structures including hashmaps, trees, priority queues in Python.`}
               ghLink="https://github.com/swapnilkr/Lossless-Text-Compression"
             />
           </Col>
