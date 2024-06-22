@@ -7,7 +7,7 @@ function TechExp() {
       options={{
         strings: [
           "Software Developer @ Motorola",
-          "MERN Stack Developer",
+          "Frontend Developer",
           "Open Source Contributor",
           "Turning Coffee into Code"
         ],

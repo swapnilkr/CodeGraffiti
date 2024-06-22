@@ -133,9 +133,10 @@ function Experience() {
 												<>
 													{((index === 0) && (i === 0 || i === 7 || i === 10)) ?
 														<div key={i} style={{
-															background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
+															boxShadow: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '0px 1px 4px 0px rgba(255,255,255,1),0px 0px 0px 3px rgba(51,51,51,1)' : '',
 															borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
-															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
+															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+															margin: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px 0px' : ''
 														}}>
 															<span dangerouslySetInnerHTML={{ __html: point }} />
 														</div>
