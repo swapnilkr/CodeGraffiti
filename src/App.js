@@ -38,12 +38,12 @@ function App() {
 			<Preloader startup={startup} />
 			<NavBar />
 			<Routes>
-				<Route path="/" element={<HomeTSA />} />
+				<Route path="/CodeGraffiti" element={<HomeTSA />} />
 				<Route path="/whoiam" element={<Whoiam />} />
 				<Route path="/experience" element={<Experience />} />
 				<Route path="/project" element={<Projects />} />
 				<Route path="/resume" element={<ResumeDoc />} />
-				<Route path="*" element={<Navigate to="/" />} />
+				<Route path="*" element={<Navigate to="/CodeGraffiti" />} />
 			</Routes>
 			<ScrollToTop />
 			<Footer />
