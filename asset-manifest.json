@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CodeGraffiti/static/css/main.19ff4627.css",
+    "main.css": "/CodeGraffiti/static/css/main.9d3006fd.css",
     "main.js": "/CodeGraffiti/static/js/main.4275d457.js",
     "static/js/787.7da95b79.chunk.js": "/CodeGraffiti/static/js/787.7da95b79.chunk.js",
     "static/media/Netflix.mp4": "/CodeGraffiti/static/media/Netflix.d86d82a4c6fe47373134.mp4",
@@ -24,12 +24,12 @@
     "static/media/divine.png": "/CodeGraffiti/static/media/divine.e9dc1986e924c68624cd.png",
     "static/media/avatar.svg": "/CodeGraffiti/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "index.html": "/CodeGraffiti/index.html",
-    "main.19ff4627.css.map": "/CodeGraffiti/static/css/main.19ff4627.css.map",
+    "main.9d3006fd.css.map": "/CodeGraffiti/static/css/main.9d3006fd.css.map",
     "main.4275d457.js.map": "/CodeGraffiti/static/js/main.4275d457.js.map",
     "787.7da95b79.chunk.js.map": "/CodeGraffiti/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19ff4627.css",
+    "static/css/main.9d3006fd.css",
     "static/js/main.4275d457.js"
   ]
 }
