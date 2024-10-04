@@ -1174,6 +1174,7 @@ button:focus {
 .experience-designation {
     color: #e1bdf2;
     font-size: 1.4rem;
+    margin-left: 35px;
 }
 
 .experience-company-name {
