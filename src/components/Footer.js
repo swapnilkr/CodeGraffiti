@@ -18,7 +18,7 @@ function Footer() {
                     <h3>Designed and Developed by Swapnil</h3>
                 </Col>
                 <Col md="4" className="footer-copywright">
-                    <h3>Copyright © {year} v1.001</h3>
+                    <h3>Copyright © {year} v1.002</h3>
                 </Col>
                 <Col md="4" className="footer-body">
                     <ul className="footer-icons">

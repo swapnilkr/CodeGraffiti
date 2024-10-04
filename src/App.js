@@ -7,7 +7,7 @@ import Experience from "./components/About/Experience.js";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import {
-	HashRouter as Router,
+	BrowserRouter as Router,
 	Route,
 	Routes,
 	Navigate
