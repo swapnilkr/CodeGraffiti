@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CodeGraffiti/static/css/main.9d3006fd.css",
-    "main.js": "/CodeGraffiti/static/js/main.c572132b.js",
+    "main.js": "/CodeGraffiti/static/js/main.fffc8850.js",
     "static/js/787.7da95b79.chunk.js": "/CodeGraffiti/static/js/787.7da95b79.chunk.js",
     "static/media/Netflix.mp4": "/CodeGraffiti/static/media/Netflix.d86d82a4c6fe47373134.mp4",
     "static/media/NetNexus.mp4": "/CodeGraffiti/static/media/NetNexus.2ba20bc651fe0f4d7ef7.mp4",
@@ -25,11 +25,11 @@
     "static/media/avatar.svg": "/CodeGraffiti/static/media/avatar.7f806e40d46fc76fbc3c4a3d71349951.svg",
     "index.html": "/CodeGraffiti/index.html",
     "main.9d3006fd.css.map": "/CodeGraffiti/static/css/main.9d3006fd.css.map",
-    "main.c572132b.js.map": "/CodeGraffiti/static/js/main.c572132b.js.map",
+    "main.fffc8850.js.map": "/CodeGraffiti/static/js/main.fffc8850.js.map",
     "787.7da95b79.chunk.js.map": "/CodeGraffiti/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d3006fd.css",
-    "static/js/main.c572132b.js"
+    "static/js/main.fffc8850.js"
   ]
 }
