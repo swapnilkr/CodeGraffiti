@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
 import Sapthagiri from '../../Assets/Sap.jpg'
@@ -10,6 +10,20 @@ import { AiFillCar } from "react-icons/ai";
 
 
 function Education() {
+
+    const [isMobile, setIsMobile] = useState(window?.innerWidth < 780);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 780);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const educationList = [
         {
@@ -43,7 +57,7 @@ function Education() {
 
 
     return (
-        <Container fluid className="experience-section">
+        <Container fluid className="education-section">
             <Particle />
             <Row>
                 <section id="experience" style={{ justifyContent: "center" }}>
@@ -51,37 +65,68 @@ function Education() {
                         <strong className="purple">Education</strong>
                     </h1>
 
-                    <div class="timeline">
-                        {educationList.map((key, index) => (
-                            <div class="timeline-box">
-                                <div class="timeline-conatiner">
-                                    <div class="timeline-logo">
-                                        <img style={{ borderRadius: (index === 1 || index === 2 ? '20px' : '') }} src={key.imageUrl} />
+                    {isMobile ?
+                        <>
+                            {educationList.map((key, index) => (
+                                <div class="">
+                                    <div class="short-dimension-timeline-box">
+                                        <div class="timeline-logo">
+                                            <img style={{ borderRadius: (index === 1 || index === 2 ? '20px' : '') }} src={key.imageUrl} />
+                                        </div>
+                                        <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
+                                            {key.title}
+                                        </h3>
+                                        <h4 class="experience-company-name">
+                                            {key.company}
+                                        </h4>
+                                        <h5 class="experience-duration m0">
+                                            {key?.endDate}</h5>
+                                        <ul class="experience-description text-align-justify">
+                                            {key.description.split('\n').map((point, i) => (
+                                                <li key={i}>
+                                                    <span dangerouslySetInnerHTML={{ __html: point }} />
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
-                                    <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
-                                        {key.title}
-                                    </h3>
-                                    <h4 class="experience-company-name">
-                                        {key.company}
-                                    </h4>
-                                    <h5 class="experience-duration m0">
-                                        {key?.endDate}</h5>
-                                    <ul class="experience-description text-align-justify">
-                                        {key.description.split('\n').map((point, i) => (
-                                            <li key={i}>
-                                                <span dangerouslySetInnerHTML={{ __html: point }} />
-                                            </li>
-                                        ))}
-                                    </ul>
+                                </div>
+                            ))}
+                        </>
+                        :
+                        <div class="timeline">
+                            {educationList.map((key, index) => (
+                                <div class="timeline-box">
+                                    <div class="timeline-conatiner">
+                                        <div class="timeline-logo">
+                                            <img style={{ borderRadius: (index === 1 || index === 2 ? '20px' : '') }} src={key.imageUrl} />
+                                        </div>
+                                        <h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
+                                            {key.title}
+                                        </h3>
+                                        <h4 class="experience-company-name">
+                                            {key.company}
+                                        </h4>
+                                        <h5 class="experience-duration m0">
+                                            {key?.endDate}</h5>
+                                        <ul class="experience-description text-align-justify">
+                                            {key.description.split('\n').map((point, i) => (
+                                                <li key={i}>
+                                                    <span dangerouslySetInnerHTML={{ __html: point }} />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            ))}
+                            <div class="timeline-divider plane">
+                                <div class="timeline-traveller car">
+                                    <AiFillCar />
                                 </div>
                             </div>
-                        ))}
-                        <div class="timeline-divider plane">
-                            <div class="timeline-traveller car">
-                                <AiFillCar />
-                            </div>
                         </div>
-                    </div>
+                    }
+
+
                 </section>
 
             </Row>

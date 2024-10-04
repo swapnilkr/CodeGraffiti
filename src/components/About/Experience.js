@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particles";
 import Moto from '../../Assets/moto.png'
@@ -12,6 +12,20 @@ import Education from "./Education"
 
 
 function Experience() {
+
+	const [isMobile, setIsMobile] = useState(window?.innerWidth < 780);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < 780);
+		};
+
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	const experienceList = [
 		{
@@ -112,57 +126,105 @@ function Experience() {
 						<h1 style={{ fontSize: "2.1em", paddingBottom: "20px", textAlign: "center" }}>
 							<strong className="purple">Experience</strong>
 						</h1>
+						{isMobile ?
+							<>
+								{experienceList.map((key, index) => (
+									<div class="short-dimension-timeline-box">
+										<div class="timeline-conatiner">
+											<div class="timeline-logo">
+												<img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6 ? '20px' : '') }} src={key.imageUrl} />
+											</div>
+											<h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
+												{key.title}
+											</h3>
+											<h4 class="experience-company-name">
+												{key.company}
+											</h4>
+											<h5 class="experience-duration m0">
+												{key?.startDate} - {key?.endDate}</h5>
+											<ul style={{ color: index === 0 ? "white" : "" }} class="experience-description text-align-justify">
+												{key.description.split('\n').map((point, i) => (
+													<>
+														{((index === 0) && (i === 0 || i === 7 || i === 10)) ?
+															<div key={i} style={{
+																boxShadow: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '0px 1px 4px 0px rgba(255,255,255,1),0px 0px 0px 3px rgba(51,51,51,1)' : '',
+																borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																margin: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px 0px' : ''
+															}}>
+																<span dangerouslySetInnerHTML={{ __html: point }} />
+															</div>
+															:
 
-						<div class="timeline">
-							{experienceList.map((key, index) => (
-								<div class="timeline-box">
-									<div class="timeline-conatiner">
-										<div class="timeline-logo">
-											<img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6 ? '20px' : '') }} src={key.imageUrl} />
+															<li key={i} style={{
+																background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
+																borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
+															}}>
+																<span dangerouslySetInnerHTML={{ __html: point }} />
+															</li>
+														}
+													</>
+
+												))}
+											</ul>
 										</div>
-										<h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
-											{key.title}
-										</h3>
-										<h4 class="experience-company-name">
-											{key.company}
-										</h4>
-										<h5 class="experience-duration m0">
-											{key?.startDate} - {key?.endDate}</h5>
-										<ul style={{ color: index === 0 ? "white" : "" }} class="experience-description text-align-justify">
-											{key.description.split('\n').map((point, i) => (
-												<>
-													{((index === 0) && (i === 0 || i === 7 || i === 10)) ?
-														<div key={i} style={{
-															boxShadow: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '0px 1px 4px 0px rgba(255,255,255,1),0px 0px 0px 3px rgba(51,51,51,1)' : '',
-															borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
-															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
-															margin: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px 0px' : ''
-														}}>
-															<span dangerouslySetInnerHTML={{ __html: point }} />
-														</div>
-														:
+									</div>
+								))}
+							</>
+							:
+							<div class="timeline">
+								{experienceList.map((key, index) => (
+									<div class="timeline-box">
+										<div class="timeline-conatiner">
+											<div class="timeline-logo">
+												<img style={{ borderRadius: (index === 1 || index === 2 || index === 5 || index === 6 ? '20px' : '') }} src={key.imageUrl} />
+											</div>
+											<h3 class="experience-designation m0 m-blue"> &nbsp; &nbsp; &nbsp;
+												{key.title}
+											</h3>
+											<h4 class="experience-company-name">
+												{key.company}
+											</h4>
+											<h5 class="experience-duration m0">
+												{key?.startDate} - {key?.endDate}</h5>
+											<ul style={{ color: index === 0 ? "white" : "" }} class="experience-description text-align-justify">
+												{key.description.split('\n').map((point, i) => (
+													<>
+														{((index === 0) && (i === 0 || i === 7 || i === 10)) ?
+															<div key={i} style={{
+																boxShadow: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '0px 1px 4px 0px rgba(255,255,255,1),0px 0px 0px 3px rgba(51,51,51,1)' : '',
+																borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																margin: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px 0px' : ''
+															}}>
+																<span dangerouslySetInnerHTML={{ __html: point }} />
+															</div>
+															:
 
-														<li key={i} style={{
-															background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
-															borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
-															padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
-														}}>
-															<span dangerouslySetInnerHTML={{ __html: point }} />
-														</li>
-													}
-												</>
+															<li key={i} style={{
+																background: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? 'grey' : '',
+																borderRadius: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : '',
+																padding: ((index === 0) && (i === 0 || i === 7 || i === 10)) ? '10px' : ''
+															}}>
+																<span dangerouslySetInnerHTML={{ __html: point }} />
+															</li>
+														}
+													</>
 
-											))}
-										</ul>
+												))}
+											</ul>
+										</div>
+									</div>
+								))}
+								<div class="timeline-divider plane">
+									<div class="timeline-traveller">
+										<BsFillAirplaneFill />
 									</div>
 								</div>
-							))}
-							<div class="timeline-divider plane">
-								<div class="timeline-traveller">
-									<BsFillAirplaneFill />
-								</div>
 							</div>
-						</div>
+						}
+
 					</section>
 
 				</Row>

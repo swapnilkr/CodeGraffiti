@@ -324,6 +324,7 @@ button:focus {
 .navbar-nav .nav-item {
     position: relative;
     margin-left: 20px;
+    text-align: center;
 }
 
 .navbar-nav .nav-item a {
@@ -346,8 +347,12 @@ button:focus {
 
 @media (max-width: 700px) {
     .nav-item {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        text-align: center;
     }
 
     .navbar-nav .nav-item a svg {
@@ -562,7 +567,9 @@ button:focus {
 .home-about-social-links {
     justify-content: center !important;
     padding-top: 15px !important;
-    display: inline-block !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     position: relative !important;
     padding-inline-start: 0 !important;
 }
@@ -1052,6 +1059,20 @@ button:focus {
     width: 100%;
 }
 
+.short-dimension-timeline-box {
+    margin: 5px 5px 15px;
+    min-height: 150px;
+    position: relative;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+}
+ 
 .timeline-box {
     margin: 5px;
     width: calc(48% - 15px);
@@ -1156,7 +1177,7 @@ button:focus {
 }
 
 .experience-company-name {
-    margin: 5px 0 0;
+    margin: 5px 0px 0px 35px;
     color: #eb822d;
     font-weight: 400;
     font-size: 1.2rem;
@@ -1187,4 +1208,19 @@ button:focus {
 
 .text-align-justify {
     text-align: justify;
+}
+
+.education-section {
+    position: relative !important;
+    padding-top: 150px;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+}
+
+@media (max-width: 767px) {
+    .education-section {
+        padding-top: 40px;
+    }
+    
 }
